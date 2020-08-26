@@ -24,14 +24,13 @@ public class Event extends ListenerAdapter {
         String receivedMessageRaw = event.getMessage().getContentRaw();
         Member author = event.getMember();
 
-        if(receivedMessageRaw.contains(""+prefix) && allowedToGivePoints(author)){
+        if(receivedMessageRaw.contains(""+prefix)){
             int possitionPrefix = receivedMessageRaw.indexOf(prefix);
             if(getNumberFromCommand(receivedMessageRaw) > 0){
                 checkCommand(receivedMessageRaw.substring(possitionPrefix + 1), getNumberFromCommand(receivedMessageRaw));
             }else{
                 checkCommand(receivedMessageRaw.substring(possitionPrefix + 1));
             }
-
         }
     }
 
@@ -39,12 +38,14 @@ public class Event extends ListenerAdapter {
         //TODO Read all users and put them into a Dictionary with the discord ID as the dictionary id
     }
 
+    //TODO change the where you check if the person is allowed to give points
     private boolean allowedToGivePoints(Member member){
         return  member.hasPermission(Permission.ADMINISTRATOR);
     }
 
 
     //TODO make this lose coupled
+    //TODO change the where you check if the person is allowed to give points
     private void checkCommand(String command){
         switch (command){
             case "AddGBP":
