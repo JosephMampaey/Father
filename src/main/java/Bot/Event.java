@@ -20,17 +20,16 @@ public class Event extends ListenerAdapter {
         if (event.getAuthor().isBot()) {
             return;
         }
+      
+        String receivedMessageRaw = event.getMessage().getContentRaw();
+        Member author = event.getMember();
 
-        Message receivedMessage = event.getMessage();
-        String receivedMessageRaw = receivedMessage.getContentRaw();
-        Member messageSender = event.getMember();
-
-        if(receivedMessageRaw.contains(""+prefix) && allowedToGivePoints(messageSender)){
+        if(receivedMessageRaw.contains(""+prefix) && allowedToGivePoints(author)){
             int possitionPrefix = receivedMessageRaw.indexOf(prefix);
-            if(commandHasNumber(receivedMessageRaw)){
-                checkCommand(receivedMessageRaw.substring(possitionPrefix), getNumberFromCommand(receivedMessageRaw));
+            if(getNumberFromCommand(receivedMessageRaw) > 0){
+                checkCommand(receivedMessageRaw.substring(possitionPrefix + 1), getNumberFromCommand(receivedMessageRaw));
             }else{
-                checkCommand(receivedMessageRaw.substring(possitionPrefix));
+                checkCommand(receivedMessageRaw.substring(possitionPrefix + 1));
             }
 
         }
@@ -66,18 +65,18 @@ public class Event extends ListenerAdapter {
     }
 
     //TODO commandHasNumber && getNumberFromCommand could be one function that returns a number or null depending if the command has a number or not
-    private boolean commandHasNumber(String command){
-        if(command.contains(" ")){
-            String[] commandSplit = command.split(" ");
-            for(int index = 0; index < commandSplit.length; index++){
-                try{
-                    Integer.parseInt((commandSplit[index]));
-                    return true;
-                }catch (Exception e){}
-            }
-        }
-        return false;
-    }
+//    private boolean commandHasNumber(String command){
+//        if(command.contains(" ")){
+//            String[] commandSplit = command.split(" ");
+//            for(int index = 0; index < commandSplit.length; index++){
+//                try{
+//                    Integer.parseInt((commandSplit[index]));
+//                    return true;
+//                }catch (Exception e){}
+//            }
+//        }
+//        return false;
+//    }
 
     private int getNumberFromCommand(String command){
         if(command.contains(" ")){
@@ -89,7 +88,7 @@ public class Event extends ListenerAdapter {
                 }catch (Exception e){}
             }
         }
-        throw new IllegalArgumentException("No number was found in "+command);
+        return -1;
     }
 
 }
