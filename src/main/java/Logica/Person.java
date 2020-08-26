@@ -4,14 +4,15 @@ public class Person {
     //TODO add rights
     //TODO problem same person in multiple discord servers? -> keep record of the serverId store the persons per guild in a file (Dictionary of guilds -> Dictionary of members)
     private int points = 0;
-    private String discordId;
-    private String guildId;
+    private final String discordId;
+    private final String guildId;
     private String nickName;
     private Gender gender;
 
-    public Person(String id,String name){
+    public Person(String id, String guildId, String name){
         this.discordId = id;
         this.nickName = name;
+        this.guildId = guildId;
     }
 
     public void RemovePoint(){
