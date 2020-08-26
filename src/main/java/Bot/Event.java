@@ -64,20 +64,6 @@ public class Event extends ListenerAdapter {
         }
     }
 
-    //TODO commandHasNumber && getNumberFromCommand could be one function that returns a number or null depending if the command has a number or not
-//    private boolean commandHasNumber(String command){
-//        if(command.contains(" ")){
-//            String[] commandSplit = command.split(" ");
-//            for(int index = 0; index < commandSplit.length; index++){
-//                try{
-//                    Integer.parseInt((commandSplit[index]));
-//                    return true;
-//                }catch (Exception e){}
-//            }
-//        }
-//        return false;
-//    }
-
     private int getNumberFromCommand(String command){
         if(command.contains(" ")){
             String[] commandSplit = command.split(" ");
