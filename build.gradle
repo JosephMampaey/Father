@@ -19,3 +19,5 @@ dependencies {
     compile group: 'commons-io', name: 'commons-io', version: '2.5'
     compile 'com.vdurmont:emoji-java:4.0.0'
 }
+
+mainClassName = "Main"

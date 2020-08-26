@@ -18,4 +18,12 @@ public class Server {
     public void addMember(Person person){
         members.put(person.getDiscordId(), person);
     }
+    
+    
+    public String getGuildId(){
+        return guildId;
+    }
+    public Dictionary<String, Person> getMembers(){
+        return members;
+    }
 }
