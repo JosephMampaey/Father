@@ -137,18 +137,19 @@ public class Event extends ListenerAdapter {
         return -1;
     }
     
-    //TODO Add person to the server if it doesnt exist
     private ArrayList<Person> getReceiver(Message message, String serverId){
         ArrayList<Person> receivers = new ArrayList<Person>();
         if(message.getMentionedUsers().size() > 0){
             for (int i = 0; i < message.getMentionedUsers().size(); i++) {
-                receivers.add(servers.get(serverId).getMembers().get(message.getMentionedUsers().get(i).getId()));
+                User user = message.getMentionedUsers().get(i);
+                try{
+                    receivers.add(servers.get(serverId).getMembers().get(user.getId()));
+                }catch(Exception e){
+                    servers.get(serverId).addMember(new Person(user.getId(),serverId,user.getName()));
+                    receivers.add(servers.get(serverId).getMembers().get(user.getId()));
+                }
             }
         }
         return receivers;
     }
-    
-    
-
-
 }
