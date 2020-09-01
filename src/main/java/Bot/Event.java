@@ -35,16 +35,17 @@ public class Event extends ListenerAdapter {
         Member author = event.getMember();
 
         if(receivedMessageRaw.contains(""+prefix)){
-            int possitionPrefix = receivedMessageRaw.indexOf(prefix);
-            if(getNumberFromCommand(receivedMessageRaw) > 0){
+            //int possitionPrefix = receivedMessageRaw.indexOf(prefix);
+            String command = receivedMessageRaw.split(" ")[0];
+            if(getNumberFrom(receivedMessageRaw) > 0){
                 checkCommand(
-                        receivedMessageRaw.substring(possitionPrefix + 1), 
+                        command.substring(1), 
                         author, 
-                        getNumberFromCommand(receivedMessageRaw),
+                        getNumberFrom(receivedMessageRaw),
                         getReceiver(event.getMessage(), event.getGuild().getId()));
             }else{
                 checkCommand(
-                        receivedMessageRaw.substring(possitionPrefix + 1), 
+                        command.substring(1), 
                         author, 
                         getReceiver(event.getMessage(), event.getGuild().getId()));
             }
@@ -61,7 +62,6 @@ public class Event extends ListenerAdapter {
     }
 
 
-    //TODO change the where you check if the person is allowed to give points
     private void checkCommand(String command,Member author, ArrayList<Person> receivers){
         switch (command.toLowerCase()){
             case "addpoints":
@@ -105,14 +105,14 @@ public class Event extends ListenerAdapter {
             case "addpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).AddPoint(1);
+                        receivers.get(i).AddPoint(ammount);
                     }
                 }
                 break;
             case "rmpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).RemovePoint(1);
+                        receivers.get(i).RemovePoint(ammount);
                     }
                 }
                 break;
@@ -124,7 +124,7 @@ public class Event extends ListenerAdapter {
         }
     }
 
-    private int getNumberFromCommand(String command){
+    private int getNumberFrom(String command){
         if(command.contains(" ")){
             String[] commandSplit = command.split(" ");
             for(int index = 0; index < commandSplit.length; index++){
@@ -138,18 +138,33 @@ public class Event extends ListenerAdapter {
     }
     
     private ArrayList<Person> getReceiver(Message message, String serverId){
-        ArrayList<Person> receivers = new ArrayList<Person>();
+        ArrayList<Person> returnReceivers = new ArrayList<Person>();
         if(message.getMentionedUsers().size() > 0){
             for (int i = 0; i < message.getMentionedUsers().size(); i++) {
                 User user = message.getMentionedUsers().get(i);
-                try{
-                    receivers.add(servers.get(serverId).getMembers().get(user.getId()));
-                }catch(Exception e){
-                    servers.get(serverId).addMember(new Person(user.getId(),serverId,user.getName()));
-                    receivers.add(servers.get(serverId).getMembers().get(user.getId()));
-                }
+                addServer(serverId);
+                addPersonToServer(serverId,user);
+                returnReceivers.add(servers.get(serverId).getMembers().get(user.getId()));
             }
         }
-        return receivers;
+        return returnReceivers;
+    }
+    
+    private void addServer(String serverId){
+        try{
+            servers.get(serverId).getGuildId();
+        }catch(Exception e){
+            servers.put(serverId,new Server(serverId));
+        }
+    }
+    
+    private void addPersonToServer(String serverId,User user){
+        try{
+            Person person = servers.get(serverId).getMembers().get(user.getId());
+            person.GetPoints();
+
+        }catch(Exception e){
+            servers.get(serverId).addMember(new Person(user.getId(),serverId,user.getName()));
+        }
     }
 }
