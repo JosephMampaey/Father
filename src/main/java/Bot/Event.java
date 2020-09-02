@@ -1,18 +1,19 @@
 package Bot;
 
+import Logica.CommandFactory;
 import Logica.Person;
 import Logica.Server;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
-import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
-import net.dv8tion.jda.core.entities.User;
-import net.dv8tion.jda.core.events.ReadyEvent;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.Permission;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Message;
+import net.dv8tion.jda.api.entities.User;
+import net.dv8tion.jda.api.events.ReadyEvent;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 //TODO @ person who needs to receive points
 //TODO check if the person who executes command is allowed to give points
@@ -33,95 +34,21 @@ public class Event extends ListenerAdapter {
       
         String receivedMessageRaw = event.getMessage().getContentRaw();
         Member author = event.getMember();
-
+        CommandFactory commandFactory = new CommandFactory();
         if(receivedMessageRaw.contains(""+prefix)){
             //int possitionPrefix = receivedMessageRaw.indexOf(prefix);
             String command = receivedMessageRaw.split(" ")[0];
             if(getNumberFrom(receivedMessageRaw) > 0){
-                checkCommand(
-                        command.substring(1), 
-                        author, 
-                        getNumberFrom(receivedMessageRaw),
-                        getReceiver(event.getMessage(), event.getGuild().getId()));
+                commandFactory.checkCommand(command.substring(1),author,getNumberFrom(receivedMessageRaw),getReceiver(event.getMessage(), event.getGuild().getId()));
+                        
             }else{
-                checkCommand(
-                        command.substring(1), 
-                        author, 
-                        getReceiver(event.getMessage(), event.getGuild().getId()));
+                commandFactory.checkCommand(command.substring(1),author,getReceiver(event.getMessage(), event.getGuild().getId()));
             }
         }
     }
 
     public void onReady(ReadyEvent event) {
         //TODO Read all users and put them into a Dictionary with the discord ID as the dictionary id
-    }
-
-    //TODO change the where you check if the person is allowed to give points
-    private boolean allowedToGivePoints(Member member){
-        return  member.hasPermission(Permission.ADMINISTRATOR);
-    }
-
-
-    private void checkCommand(String command,Member author, ArrayList<Person> receivers){
-        switch (command.toLowerCase()){
-            case "addpoints":
-                if(allowedToGivePoints(author)) {
-                    for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).AddPoint(1);
-                    }
-                }
-                break;
-            case "rmpoints":
-                if(allowedToGivePoints(author)) {
-                    for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).RemovePoint(1);
-                    }
-                }
-                break;
-            case "points":
-                if(allowedToGivePoints(author)) {
-                    for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).GetPoints();
-                    }
-                }
-                break;
-            case "settings":
-                if(allowedToGivePoints(author)) {}
-                break;
-            case "set":
-                if(allowedToGivePoints(author)) {}
-                break;
-            case "clear":
-                if(allowedToGivePoints(author)) {}
-                break;
-            default:
-                break;
-        }
-    }
-
-
-    private void checkCommand(String command,Member author, int ammount, ArrayList<Person> receivers){
-       switch (command.toLowerCase()){
-            case "addpoints":
-                if(allowedToGivePoints(author)) {
-                    for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).AddPoint(ammount);
-                    }
-                }
-                break;
-            case "rmpoints":
-                if(allowedToGivePoints(author)) {
-                    for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).RemovePoint(ammount);
-                    }
-                }
-                break;
-            case "set":
-                if(allowedToGivePoints(author)) {}
-                break;
-            default:
-                break;
-        }
     }
 
     private int getNumberFrom(String command){

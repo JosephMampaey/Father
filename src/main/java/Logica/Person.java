@@ -34,6 +34,10 @@ public class Person {
     public int GetPoints(){
         return points;
     }
+    
+    public void setPoints(int ammountOfPoints){
+        points = ammountOfPoints;
+    }
 
     public Gender getGender(){
         return gender;

@@ -3,19 +3,21 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
 import Bot.Event;
-import net.dv8tion.jda.core.AccountType;
-import net.dv8tion.jda.core.JDABuilder;
-import net.dv8tion.jda.core.OnlineStatus;
-import net.dv8tion.jda.core.entities.Game;
-import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import Data.TokenReader;
+import java.io.FileNotFoundException;
+import net.dv8tion.jda.api.AccountType;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
+import net.dv8tion.jda.api.entities.Activity;
+
 
 public class Main {
-    public static void main(String[] args) throws LoginException {
+    public static void main(String[] args) throws LoginException, FileNotFoundException {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
-        String token = "NzQ3OTA0NzkzOTIxNDU0MTUx.X0Vqng.9F__Www1Psg_HjsweSQVzo2Bnrw";
-        builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
-        builder.setGame(Game.playing("with mommy"));
-        builder.setToken(token).addEventListener(new Event()).buildAsync();
-        //builder.addEventListener(new Main());
+        String token = TokenReader.getToken();
+        builder.setStatus(OnlineStatus.DO_NOT_DISTURB); //doens't work
+        builder.setActivity(Activity.playing("with mommy"));
+        builder.setToken(token).addEventListeners(new Event()).build();
     }
 }

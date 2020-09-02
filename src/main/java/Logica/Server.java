@@ -1,7 +1,5 @@
 package Logica;
 
-import net.dv8tion.jda.core.entities.Guild;
-
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Enumeration;
