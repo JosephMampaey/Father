@@ -102,8 +102,13 @@ public class CommandFactory {
             case "set":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).setPoints(ammount);
+                        if(!author.getId().equals(receivers.get(i).getDiscordId())){
+                            receivers.get(i).setPoints(ammount);
+                        }else{
+                            receivers.remove(i);
+                        }
                     }
+                    p.presentationSet(receivers, ""+ammount, messageChannel);
                 }
                 break;
             default:

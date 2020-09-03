@@ -60,9 +60,20 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle("point from");
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),""+users.get(i).GetPoints(), true);
+            eb.addField(users.get(i).getNickname(),""+users.get(i).GetPoints(), false);
         }
         eb.setFooter("hehehe");
+        eb.setColor(Color.gray);
+        channel.sendMessage(eb.build()).queue();
+    }
+    
+    public void presentationSet(ArrayList<Person> users,String points,MessageChannel channel){
+        EmbedBuilder eb = new EmbedBuilder();
+        eb.setTitle("users set to "+points+" points");
+        for (int i = 0; i < users.size(); i++) {
+            eb.addField(users.get(i).getNickname(),"", true);
+        }
+        eb.setFooter("OwO");
         eb.setColor(Color.gray);
         channel.sendMessage(eb.build()).queue();
     }
