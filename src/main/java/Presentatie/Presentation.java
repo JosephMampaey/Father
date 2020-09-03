@@ -58,10 +58,11 @@ public class Presentation {
     
     public void presentationPoints(ArrayList<Person> users,MessageChannel channel){
         EmbedBuilder eb = new EmbedBuilder();
-        eb.setTitle("point from");
+        String returnString = "";
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),""+users.get(i).GetPoints(), false);
+            returnString += users.get(i).getNickname() + "   " + users.get(i).GetPoints() +"\n";
         }
+        eb.addField("point from", returnString, false);
         eb.setFooter("hehehe");
         eb.setColor(Color.gray);
         channel.sendMessage(eb.build()).queue();
