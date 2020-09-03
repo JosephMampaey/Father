@@ -5,9 +5,11 @@
  */
 package Logica;
 
+import Presentatie.Presentation;
 import java.util.ArrayList;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.MessageChannel;
 
 
 /**
@@ -19,20 +21,31 @@ public class CommandFactory {
         
     }
     
-    public void checkCommand(String command,Member author, ArrayList<Person> receivers){
+    public void checkCommand(String command,Member author, ArrayList<Person> receivers, MessageChannel messageChannel){
+        Presentation p = new Presentation();
          switch (command.toLowerCase()){
             case "addpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).AddPoint(1);
+                        if(!author.getId().equals(receivers.get(i).getDiscordId())){
+                            receivers.get(i).AddPoint(1);
+                        }else{
+                            receivers.remove(i);
+                        }
                     }
+                    p.presentationAddpoints(receivers, "1", messageChannel);
                 }
                 break;
             case "rmpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).RemovePoint(1);
+                        if(!author.getId().equals(receivers.get(i).getDiscordId())){
+                            receivers.get(i).RemovePoint(1);
+                        }else{
+                            receivers.remove(i);
+                        }
                     }
+                    p.presentationRemovePoints(receivers, "1", messageChannel);
                 }
                 break;
             case "points":
@@ -40,6 +53,7 @@ public class CommandFactory {
                     for (int i = 0; i < receivers.size(); i++) {
                         receivers.get(i).GetPoints();
                     }
+                    p.presentationPoints(receivers, messageChannel);
                 }
                 break;
             case "settings":
@@ -50,6 +64,7 @@ public class CommandFactory {
                     for (int i = 0; i < receivers.size(); i++) {
                         receivers.get(i).setPoints(0);
                     }
+                    p.presentationClearPoints(receivers, "1", messageChannel);
                 }
                 break;
             default:
@@ -57,20 +72,31 @@ public class CommandFactory {
         }
     }
     
-    public void checkCommand(String command,Member author, int ammount, ArrayList<Person> receivers){
+    public void checkCommand(String command,Member author, int ammount, ArrayList<Person> receivers, MessageChannel messageChannel){
+        Presentation p = new Presentation();
        switch (command.toLowerCase()){
             case "addpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).AddPoint(ammount);
+                        if(!author.getId().equals(receivers.get(i).getDiscordId())){
+                            receivers.get(i).AddPoint(ammount);
+                        }else{
+                            receivers.remove(i);
+                        }
                     }
+                    p.presentationAddpoints(receivers, ""+ammount, messageChannel);
                 }
                 break;
             case "rmpoints":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).RemovePoint(ammount);
+                        if(!author.getId().equals(receivers.get(i).getDiscordId())){
+                            receivers.get(i).RemovePoint(ammount);
+                        }else{
+                            receivers.remove(i);
+                        }  
                     }
+                    p.presentationRemovePoints(receivers, ""+ammount, messageChannel);
                 }
                 break;
             case "set":

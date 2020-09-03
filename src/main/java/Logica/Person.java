@@ -38,6 +38,10 @@ public class Person {
     public void setPoints(int ammountOfPoints){
         points = ammountOfPoints;
     }
+    
+    public String getNickname(){
+        return nickName;
+    }
 
     public Gender getGender(){
         return gender;

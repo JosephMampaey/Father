@@ -31,18 +31,18 @@ public class Event extends ListenerAdapter {
         if (event.getAuthor().isBot()) {
             return;
         }
-      
+        
         String receivedMessageRaw = event.getMessage().getContentRaw();
         Member author = event.getMember();
         CommandFactory commandFactory = new CommandFactory();
-        if(receivedMessageRaw.contains(""+prefix)){
+        if(receivedMessageRaw.startsWith(""+prefix)){
             //int possitionPrefix = receivedMessageRaw.indexOf(prefix);
             String command = receivedMessageRaw.split(" ")[0];
             if(getNumberFrom(receivedMessageRaw) > 0){
-                commandFactory.checkCommand(command.substring(1),author,getNumberFrom(receivedMessageRaw),getReceiver(event.getMessage(), event.getGuild().getId()));
+                commandFactory.checkCommand(command.substring(1),author,getNumberFrom(receivedMessageRaw),getReceiver(event.getMessage(), event.getGuild().getId()), event.getChannel());
                         
             }else{
-                commandFactory.checkCommand(command.substring(1),author,getReceiver(event.getMessage(), event.getGuild().getId()));
+                commandFactory.checkCommand(command.substring(1),author,getReceiver(event.getMessage(), event.getGuild().getId()),event.getChannel());
             }
         }
     }
