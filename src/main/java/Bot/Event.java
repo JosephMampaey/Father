@@ -1,5 +1,6 @@
 package Bot;
 
+import Data.Data;
 import Logica.CommandFactory;
 import Logica.Person;
 import Logica.Server;
@@ -93,5 +94,7 @@ public class Event extends ListenerAdapter {
         }catch(Exception e){
             servers.get(serverId).addMember(new Person(user.getId(),serverId,user.getName()));
         }
+        Data d = new Data();
+        d.SaveDiscordServer(servers.get(serverId));
     }
 }

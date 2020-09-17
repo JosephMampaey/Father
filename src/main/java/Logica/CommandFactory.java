@@ -20,7 +20,7 @@ public class CommandFactory {
     public CommandFactory(){
         
     }
-    
+    //if the command does not have a number
     public void checkCommand(String command,Member author, ArrayList<Person> receivers, MessageChannel messageChannel){
         Presentation p = new Presentation();
          switch (command.toLowerCase()){
@@ -71,7 +71,7 @@ public class CommandFactory {
                 break;
         }
     }
-    
+    //if the command has a number
     public void checkCommand(String command,Member author, int ammount, ArrayList<Person> receivers, MessageChannel messageChannel){
         Presentation p = new Presentation();
        switch (command.toLowerCase()){
