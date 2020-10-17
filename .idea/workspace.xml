@@ -3,8 +3,32 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="" />
+    <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Logica/MessageParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot/Event.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +38,14 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,11 +57,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46666667" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Logica" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -56,6 +99,18 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1011" y="389" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599056323300">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -65,34 +120,63 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="984" y="280" key="FileChooserDialogImpl/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599056322242" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1599075345224">
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1602962532831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599075345224" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1599075345224">
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532831" />
+    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1602962532831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599075345224" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1599075345224">
+    <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532831" />
+    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1602962532831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599075345224" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1599075345224">
+    <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532831" />
+    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1602962532923">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599075345224" />
+    <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532923" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1602962532832">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532832" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1602962532832">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532832" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1602962532832">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532832" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1602962532832">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602962532832" />
     <state x="684" y="100" key="SettingsEditor" timestamp="1599056432857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="684" y="100" key="SettingsEditor/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599056432857" />
+    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602960934435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602960934435" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>11</line>
+          <line>14</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Bot/Event.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

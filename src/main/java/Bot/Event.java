@@ -34,6 +34,7 @@ public class Event extends ListenerAdapter {
         }
         
         String receivedMessageRaw = event.getMessage().getContentRaw();
+        System.out.println(receivedMessageRaw);
         Member author = event.getMember();
         CommandFactory commandFactory = new CommandFactory();
         if(receivedMessageRaw.startsWith(""+prefix)){
