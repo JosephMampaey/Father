@@ -9,9 +9,8 @@ package Presentatie;
 import Logica.Person;
 import java.awt.Color;
 import java.util.ArrayList;
-import java.util.Dictionary;
+
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.Invite.Channel;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
 /**
@@ -60,7 +59,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         String returnString = "";
         for (int i = 0; i < users.size(); i++) {
-            returnString += users.get(i).getNickname() + "   " + users.get(i).GetPoints() +"\n";
+            returnString += users.get(i).getNickname() + "   " + users.get(i).getPoints() +"\n";
         }
         eb.addField("point from", returnString, false);
         eb.setFooter("hehehe");

@@ -23,11 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Logica/MessageParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Logica/CommandFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/MessageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/MessageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -76,7 +82,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Presentatie.Main" />
       <module name="Father.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,10 +122,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="389" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599056323300" />
-    <state x="984" y="280" key="FileChooserDialogImpl" timestamp="1599056322242">
+    <state x="984" y="280" key="FileChooserDialogImpl" timestamp="1604072620067">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="984" y="280" key="FileChooserDialogImpl/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599056322242" />
+    <state x="984" y="280" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1604072620067" />
     <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1602962532831">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -160,22 +167,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="684" y="100" key="SettingsEditor/0.0.2560.1400/-2560.-17.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1599056432857" />
-    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1602960934435">
+    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604074722137">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1602960934435" />
+    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1604074722137" />
+    <state x="2812" y="-18" width="1827" height="1388" maximized="true" key="dock-window-1" timestamp="1604074043027">
+      <screen x="2560" y="1" width="2560" height="1400" />
+    </state>
+    <state x="2812" y="-18" width="1827" height="1388" maximized="true" key="dock-window-1/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1604074043027" />
+    <state x="718" y="470" width="1827" height="1388" key="dock-window-2" timestamp="1604074653939">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="718" y="470" width="1827" height="1388" key="dock-window-2/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1604074653939" />
+    <state x="980" y="447" key="refactoring.ChangeSignatureDialog" timestamp="1603111391104">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="980" y="447" key="refactoring.ChangeSignatureDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1603111391104" />
+    <state x="936" y="330" key="run.anything.popup" timestamp="1603110637147">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1603110637147" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>14</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Presentatie/Main.java</url>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Bot/Event.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Presentatie/Event.java</url>
+          <line>35</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -1,4 +1,4 @@
-package Bot;
+package Presentatie;
 
 import Data.Data;
 import Logica.CommandFactory;
@@ -7,8 +7,7 @@ import Logica.Server;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import java.util.List;
-import net.dv8tion.jda.api.Permission;
+
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
@@ -90,7 +89,7 @@ public class Event extends ListenerAdapter {
     private void addPersonToServer(String serverId,User user){
         try{
             Person person = servers.get(serverId).getMembers().get(user.getId());
-            person.GetPoints();
+            person.getPoints();
 
         }catch(Exception e){
             servers.get(serverId).addMember(new Person(user.getId(),serverId,user.getName()));

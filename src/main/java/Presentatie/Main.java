@@ -1,12 +1,11 @@
-import javax.security.auth.login.LoginException;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
+package Presentatie;
 
-import Bot.Event;
+import javax.security.auth.login.LoginException;
+
+import Presentatie.Event;
 import Data.TokenReader;
 import java.io.FileNotFoundException;
 import net.dv8tion.jda.api.AccountType;
-import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;

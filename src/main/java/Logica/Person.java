@@ -31,7 +31,7 @@ public class Person {
         points += ammountOfPoints;
     }
 
-    public int GetPoints(){
+    public int getPoints(){
         return points;
     }
     

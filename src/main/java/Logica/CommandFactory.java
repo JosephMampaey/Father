@@ -7,6 +7,8 @@ package Logica;
 
 import Presentatie.Presentation;
 import java.util.ArrayList;
+import java.util.List;
+
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.MessageChannel;
@@ -51,7 +53,7 @@ public class CommandFactory {
             case "points":
                 if(allowedToGivePoints(author)) {
                     for (int i = 0; i < receivers.size(); i++) {
-                        receivers.get(i).GetPoints();
+                        receivers.get(i).getPoints();
                     }
                     p.presentationPoints(receivers, messageChannel);
                 }
@@ -123,5 +125,16 @@ public class CommandFactory {
     private void addPointsPresentation(){
         
     }
-    
+
+    public List<Person> AddPoints(List<Person> personList, int i) {
+        return personList;
+    }
+
+    public Person AddPoints(Person personList, int i) {
+        return null;
+    }
+
+    public List<Person> removePoints(List<Person> personList, int i) {
+        return personList;
+    }
 }
