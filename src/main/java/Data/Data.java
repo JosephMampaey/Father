@@ -18,31 +18,6 @@ import org.json.JSONObject;
  */
 public class Data {
     
-    public Data(){
-        
-    }
-    
-    public Dictionary<String, Server> ReadDiscordServer(){
-        return null;
-    }
-    
-    public void SaveDiscordServer(Server server){
-        ServerToJSON(server);
-    }
-    
-    private JSONObject ServerToJSON(Server server){
-        JSONObject serverJSON = new JSONObject();
-        serverJSON.put("ID",server.getGuildId());
-        JSONArray members = new JSONArray();
-        
-        Dictionary<String, Person> membersList = server.getMembers();
-        Enumeration keys = membersList.keys(); 
-        
-        while (keys.hasMoreElements()) { 
-            System.out.println(keys.nextElement()); 
-        } 
-        
-        return null;
-    }
+
     
 }

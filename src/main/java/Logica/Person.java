@@ -1,5 +1,7 @@
 package Logica;
 
+import Logica.Enums.Gender;
+
 public class Person {
     //TODO add rights
     //TODO problem same person in multiple discord servers? -> keep record of the serverId store the persons per guild in a file (Dictionary of guilds -> Dictionary of members)
@@ -31,26 +33,45 @@ public class Person {
         points += ammountOfPoints;
     }
 
-    public int getPoints(){
+    public int getPoints() {
         return points;
     }
-    
-    public void setPoints(int ammountOfPoints){
-        points = ammountOfPoints;
+
+    public void setPoints(int points) {
+        this.points = points;
     }
-    
-    public String getNickname(){
+
+    public String getDiscordId() {
+        return discordId;
+    }
+
+    public String getGuildId() {
+        return guildId;
+    }
+
+    public String getNickName() {
         return nickName;
     }
 
-    public Gender getGender(){
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public Gender getGender() {
         return gender;
     }
 
-    public String getDiscordId(){ return discordId;}
-
-    public void setGender(Gender gender){
+    public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    public String getNickname() {
+        return  nickName;
+    }
+
+    @Override
+    public String toString(){
+        return "id: " + discordId + " Name: " + nickName;
     }
 }
 

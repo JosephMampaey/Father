@@ -2,21 +2,21 @@ package Presentatie;
 
 import javax.security.auth.login.LoginException;
 
-import Presentatie.Event;
 import Data.TokenReader;
 import java.io.FileNotFoundException;
-import net.dv8tion.jda.api.AccountType;
+
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 
 
 public class Main {
     public static void main(String[] args) throws LoginException, FileNotFoundException {
-        JDABuilder builder = new JDABuilder(AccountType.BOT);
         String token = TokenReader.getToken();
-        builder.setStatus(OnlineStatus.DO_NOT_DISTURB); //doens't work
+        JDABuilder builder = JDABuilder.create(token,GatewayIntent.GUILD_MEMBERS);
+        builder.setStatus(OnlineStatus.DO_NOT_DISTURB);
         builder.setActivity(Activity.playing("with mommy"));
-        builder.setToken(token).addEventListeners(new Event()).build();
+        builder.setToken(token).addEventListeners(new Controller()).build();
     }
 }

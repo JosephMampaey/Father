@@ -1,13 +1,10 @@
 package Logica;
 
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.Enumeration;
-import java.util.Hashtable;
+import java.util.*;
 
 public class Server {
     private String guildId;
-    private Dictionary<String, Person> members = new Hashtable<String, Person>();
+    private Map<String, Person> members = new HashMap<String, Person>();
 
     public Server(String guildId){
         this.guildId = guildId;
@@ -21,7 +18,7 @@ public class Server {
     public String getGuildId(){
         return guildId;
     }
-    public Dictionary<String, Person> getMembers(){
+    public Map<String, Person> getMembers(){
         return members;
     }
 }
