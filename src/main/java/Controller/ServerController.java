@@ -1,7 +1,7 @@
-package Controller;
+package controller;
 
-import Model.Person;
-import Model.Server;
+import model.Person;
+import model.Server;
 
 import java.util.*;
 

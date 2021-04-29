@@ -22,142 +22,120 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="Cleanup  + added events">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CommandConntroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PointController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/TokenReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/TokenReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Leaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Leaderboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/CommandFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/CommandFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/MessageParserTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1708ccd8-02ac-45d4-85fe-fbb9e9413e2f" name="Default Changelist" comment="controllers added/changed and setting changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Father" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/Father" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Father" />
   </component>
-  <component name="ProjectId" id="1gxSx90TzCuZNgPxOslKjQNSWR2" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="G:\OS stuff\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rrK0PyxVeDDloB7sUm5XPXgCLE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.46666667" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="Logica" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Presentatie.Main" />
-      <module name="Father.main" />
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="Father" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests in 'Logica'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Logica.*&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Father" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Father" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'Logica'" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="" />
-      <created>1599054995402</created>
+      <changelist id="1708ccd8-02ac-45d4-85fe-fbb9e9413e2f" name="Default Changelist" comment="" />
+      <created>1619728571314</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599054995402</updated>
+      <updated>1619728571314</updated>
     </task>
-    <task id="LOCAL-00001" summary="Cleanup  + added events">
-      <created>1619718391928</created>
+    <task id="LOCAL-00001" summary="controllers added/changed and setting changes">
+      <created>1619731986429</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1619718391928</updated>
+      <updated>1619731986429</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -172,86 +150,44 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleanup  + added events" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup  + added events" />
+    <MESSAGE value="Changed to maven" />
+    <MESSAGE value="controllers added/changed and setting changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="controllers added/changed and setting changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser" timestamp="1619720017326">
+    <state x="760" y="274" key="#Project_Structure" timestamp="1619730732628">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720017326" />
-    <state x="913" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611853096495">
+    <state x="760" y="274" key="#Project_Structure/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619730732628" />
+    <state x="1104" y="619" key="Github.CreateGistDialog" timestamp="1619732156217">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="913" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1611853096495" />
-    <state x="984" y="280" key="FileChooserDialogImpl" timestamp="1611592923977">
+    <state x="1104" y="619" key="Github.CreateGistDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732156217" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1619732012757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="984" y="280" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1611592923977" />
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1619720870732">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732012757" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1619732012757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1619720870732">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732012757" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1619732012757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1619720870732">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732012757" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1619732012757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1619720870732">
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732012757" />
+    <state x="810" y="354" key="Maven.ArtifactSearchDialog" timestamp="1619730788020">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
-    <state width="2517" height="398" key="GridCell.Tab.1.bottom" timestamp="1619717516897">
+    <state x="810" y="354" key="Maven.ArtifactSearchDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619730788020" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1619732191289">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
-    <state width="2517" height="398" key="GridCell.Tab.1.center" timestamp="1619717516897">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="398" key="GridCell.Tab.1.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
-    <state width="2517" height="398" key="GridCell.Tab.1.left" timestamp="1619717516897">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="398" key="GridCell.Tab.1.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
-    <state width="2517" height="398" key="GridCell.Tab.1.right" timestamp="1619717516897">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="398" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
-    <state x="781" y="344" key="SettingsEditor" timestamp="1619710184272">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619710184272" />
-    <state x="3341" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@2560.1.2560.1400" timestamp="1616623966811" />
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1619718393447">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619718393447" />
-    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611852516972">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1611852516972" />
-    <state x="3431" y="321" key="new project wizard" timestamp="1617086361609">
-      <screen x="2560" y="1" width="2560" height="1400" />
-    </state>
-    <state x="871" y="320" key="new project wizard/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1615929647535" />
-    <state x="3431" y="321" key="new project wizard/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@2560.1.2560.1400" timestamp="1617086361609" />
-    <state x="936" y="330" key="run.anything.popup" timestamp="1611853679739">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1611853679739" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Remote">
-        <watch expression="guild.getMembers()" language="JAVA" />
-        <watch expression="list.get(1).members" />
-      </configuration>
-    </watches-manager>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619732191289" />
   </component>
 </project>

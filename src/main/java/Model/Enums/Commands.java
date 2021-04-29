@@ -1,4 +1,4 @@
-package Model.Enums;
+package model.Enums;
 
 public enum  Commands {
     addGoodPoints,

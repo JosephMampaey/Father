@@ -1,20 +1,34 @@
-package Model;
+package model;
 
-import Model.Enums.Gender;
+import model.Enums.Gender;
+import model.Enums.Role;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
+
+@Getter(AccessLevel.PUBLIC)
+@Setter(AccessLevel.PUBLIC)
 public class Person {
-    //TODO add rights
-    //TODO problem same person in multiple discord servers? -> keep record of the serverId store the persons per guild in a file (Dictionary of guilds -> Dictionary of members)
+
+    @Id
+    private int  id;
+    @Enumerated(EnumType.STRING)
+    private Role role;
     private int points = 0;
     private final String discordId;
-    private final String guildId;
     private String nickName;
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
     public Person(String id, String guildId, String name){
         this.discordId = id;
         this.nickName = name;
-        this.guildId = guildId;
+        this.role = Role.member;
     }
 
     public void RemovePoint(){
@@ -31,42 +45,6 @@ public class Person {
 
     public  void AddPoint(int ammountOfPoints){
         points += ammountOfPoints;
-    }
-
-    public int getPoints() {
-        return points;
-    }
-
-    public void setPoints(int points) {
-        this.points = points;
-    }
-
-    public String getDiscordId() {
-        return discordId;
-    }
-
-    public String getGuildId() {
-        return guildId;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
-    public Gender getGender() {
-        return gender;
-    }
-
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
-    public String getNickname() {
-        return  nickName;
     }
 
     @Override
