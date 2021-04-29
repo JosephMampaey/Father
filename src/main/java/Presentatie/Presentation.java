@@ -6,7 +6,7 @@ https://ci.dv8tion.net/job/JDA/javadoc/net/dv8tion/jda/api/EmbedBuilder.html
  */
 package Presentatie;
 
-import Logica.Person;
+import Model.Person;
 import java.awt.Color;
 import java.util.ArrayList;
 

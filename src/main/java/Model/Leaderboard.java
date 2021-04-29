@@ -1,4 +1,4 @@
-package Logica;
+package Model;
 
 import java.util.Map;
 

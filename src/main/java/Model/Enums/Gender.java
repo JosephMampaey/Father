@@ -1,4 +1,4 @@
-package Logica.Enums;
+package Model.Enums;
 
 public enum Gender {
     male,

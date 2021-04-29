@@ -1,6 +1,6 @@
-package Logica;
+package Model;
 
-import Logica.Enums.Gender;
+import Model.Enums.Gender;
 
 public class Person {
     //TODO add rights

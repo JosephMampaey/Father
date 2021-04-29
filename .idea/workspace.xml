@@ -22,23 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Logica/Enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Logica/Leaderboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="63093aef-a061-49fa-bab4-60c329d61147" name="Default Changelist" comment="Cleanup  + added events">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CommandConntroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PointController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/CommandFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Enums/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Enums/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/MessageParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Logica/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Data/TokenReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/TokenReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Enums/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Leaderboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Leaderboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Logica/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ServerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/CommandFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Logica/CommandFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Presentatie/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/CommandFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/CommandFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Logica/MessageParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/MessageParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +75,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,6 +91,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -150,6 +152,14 @@
       <option name="presentableId" value="Default" />
       <updated>1599054995402</updated>
     </task>
+    <task id="LOCAL-00001" summary="Cleanup  + added events">
+      <created>1619718391928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619718391928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,11 +174,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleanup  + added events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup  + added events" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser" timestamp="1619715576065">
+    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser" timestamp="1619720017326">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619715576065" />
+    <state x="1085" y="383" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720017326" />
     <state x="913" y="160" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611853096495">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -177,22 +191,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="984" y="280" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1611592923977" />
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom" timestamp="1619717516897">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1619720870732">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
-    <state width="2517" height="398" key="GridCell.Tab.0.center" timestamp="1619717516896">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1619720870732">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516896" />
-    <state width="2517" height="398" key="GridCell.Tab.0.left" timestamp="1619717516896">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1619720870732">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516896" />
-    <state width="2517" height="398" key="GridCell.Tab.0.right" timestamp="1619717516897">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1619720870732">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619717516897" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619720870732" />
     <state width="2517" height="398" key="GridCell.Tab.1.bottom" timestamp="1619717516897">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -214,6 +228,10 @@
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619710184272" />
     <state x="3341" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@2560.1.2560.1400" timestamp="1616623966811" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1619718393447">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400/2560.1.2560.1400@0.0.2560.1400" timestamp="1619718393447" />
     <state x="1051" y="494" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1611852516972">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
