@@ -1,7 +1,7 @@
 package model;
 
-import model.Enums.Gender;
-import model.Enums.Role;
+import enums.Gender;
+import enums.Role;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;

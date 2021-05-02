@@ -1,4 +1,4 @@
-package model.Enums;
+package enums;
 
 public enum Gender {
     male,
