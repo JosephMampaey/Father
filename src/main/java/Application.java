@@ -12,7 +12,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import service.TokenReader;
+import data.TokenReader;
 
 import javax.security.auth.login.LoginException;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ import java.io.FileNotFoundException;
 @Configuration
 @ComponentScan(basePackages = {
         "model",
-        "service"
+        "data"
 })
 
 @EnableJpaRepositories
