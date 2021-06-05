@@ -1,6 +1,7 @@
 import controller.CommandConntroller;
 import controller.PointController;
 import controller.ServerController;
+import data.TokenReader;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
@@ -12,7 +13,6 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import data.TokenReader;
 
 import javax.security.auth.login.LoginException;
 import java.io.FileNotFoundException;
