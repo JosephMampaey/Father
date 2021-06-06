@@ -6,7 +6,7 @@ https://ci.dv8tion.net/job/JDA/javadoc/net/dv8tion/jda/api/EmbedBuilder.html
  */
 package Presentatie;
 
-import Model.Person;
+import model.Person;
 import java.awt.Color;
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle(points + " point(s) given to");
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),"", true);
+            eb.addField(users.get(i).getNickName(),"", true);
         }
         eb.setFooter("Who is a good boy/girl");
         eb.setColor(Color.green);
@@ -37,7 +37,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle(points + " point(s) removed from");
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),"", true);
+            eb.addField(users.get(i).getNickName(),"", true);
         }
         eb.setFooter("Who is a bad boy/girl");
         eb.setColor(Color.red);
@@ -48,7 +48,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle("point cleared from");
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),"", true);
+            eb.addField(users.get(i).getNickName(),"", true);
         }
         eb.setFooter("Who is a sad boy/girl");
         eb.setColor(Color.gray);
@@ -59,7 +59,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         String returnString = "";
         for (int i = 0; i < users.size(); i++) {
-            returnString += users.get(i).getNickname() + "   " + users.get(i).getPoints() +"\n";
+            returnString += users.get(i).getNickName() + "   " + users.get(i).getPoints() +"\n";
         }
         eb.addField("point from", returnString, false);
         eb.setFooter("hehehe");
@@ -71,7 +71,7 @@ public class Presentation {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle("users set to "+points+" points");
         for (int i = 0; i < users.size(); i++) {
-            eb.addField(users.get(i).getNickname(),"", true);
+            eb.addField(users.get(i).getNickName(),"", true);
         }
         eb.setFooter("OwO");
         eb.setColor(Color.gray);

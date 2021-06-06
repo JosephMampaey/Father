@@ -1,4 +1,4 @@
-package Model.Enums;
+package enums;
 
 public enum Role {
     admin,

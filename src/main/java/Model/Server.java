@@ -1,10 +1,23 @@
-package Model;
+package model;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.*;
 
+@Getter(AccessLevel.PUBLIC)
+@Setter(AccessLevel.PUBLIC)
 public class Server {
+    @Id
+    private int id;
     private String guildId;
-    private Map<String, Person> members = new HashMap<String, Person>();
+    @OneToMany
+    private List<Person> members = new ArrayList<Person>();
+    @OneToOne
     private Settings serverSetting;
 
     public Server(String guildId){
@@ -13,14 +26,6 @@ public class Server {
     }
 
     public void addMember(Person person){
-        members.put(person.getDiscordId(), person);
-    }
-    
-    
-    public String getGuildId(){
-        return guildId;
-    }
-    public Map<String, Person> getMembers(){
-        return members;
+        members.add(person);
     }
 }
